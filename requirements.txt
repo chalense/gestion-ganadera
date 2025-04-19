@@ -1,0 +1,29 @@
+# Dependencias básicas para Django y PostgreSQL
+Django>=5.2
+psycopg2-binary
+
+# Manejo de variables de entorno (útil para separar la configuración según el ambiente)
+django-environ
+
+# Extensiones y herramientas de desarrollo
+django-debug-toolbar      # Para inspeccionar consultas SQL y el rendimiento en desarrollo
+django-extensions         # Comandos adicionales útiles, por ejemplo, para graficar modelos y otras tareas administrativas
+
+# Creación y gestión de APIs REST (útil si decides exponer información del sistema)
+djangorestframework
+drf-yasg                  # Documentación automática de la API con Swagger
+# Alternativamente, podrías usar drf-spectacular según tu preferencia
+
+# Control de histórico (para auditar cambios en registros críticos)
+django-simple-history
+
+# Manejo de estructuras jerárquicas (útil si en algún momento requieres representar relaciones anidadas)
+django-mptt
+
+# Procesamiento y manejo de imágenes (por ejemplo, para el campo 'imagen_fierro' en la tabla Duenos)
+Pillow
+
+# Tareas asíncronas (ideal para notificaciones, procesamiento en segundo plano, etc.)
+celery
+django-celery-beat
+redis                     # Broker para Celery
